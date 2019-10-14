@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/styles.scss';
-import App from './App';
+import Kimomi from './BasePage/Kimomi';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Kimomi />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

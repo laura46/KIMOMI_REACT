@@ -1,2 +1,14 @@
-$main: #ffab91;
+$main: #fff6f9;
 $accent: #263238;
+$accent-light: #90a4ae;
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    padding: 0 10px;
+    margin: 0 20px;
+    color: $accent;
+}
+
