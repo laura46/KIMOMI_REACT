@@ -1,8 +1,10 @@
 @import './theme.scss';
-@import '../BasePage/basepage.scss';
+@import './responsive.scss';
+@import './basepage.scss';
 
 html, body, div#root {
-    height: 100%;
+    display: -webkit-box;
+    height: 100vh;
     width: 100%;
     margin: 0;
 }
@@ -19,7 +21,7 @@ html, body, div#root {
     flex-flow: column;
     justify-content: space-between;
     &-home {
-        height: 100%;
+        height: auto;
         padding: 30px;
     }
 }
