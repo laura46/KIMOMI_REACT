@@ -1,8 +1,11 @@
 import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
-import { HomeRounded, ShoppingCartRounded, AccountCircleRounded, FavoriteRounded } from '@material-ui/icons';
+import { HomeRounded, ShoppingCartRounded, AccountCircleRounded, FavoriteRounded, MenuRounded } from '@material-ui/icons';
 
 class Navbar extends React.Component {
+    constructor() {
+        super();
+    }
     render() {
         return (
             <div className="navbar">
@@ -11,6 +14,7 @@ class Navbar extends React.Component {
                     <FavoriteRounded/>
                 </div>
                 <div>
+                    <IconButton ><MenuRounded /></IconButton>
                     <IconButton ><HomeRounded /></IconButton>
                     <IconButton ><ShoppingCartRounded /></IconButton>
                     <IconButton ><AccountCircleRounded /></IconButton>
