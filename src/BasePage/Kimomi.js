@@ -10,7 +10,19 @@ class Kimomi extends React.Component {
         if(window.screen.width <= 460){
             this.isMobile = true;
         }
-        console.log(this.isMobile);
+
+    }
+
+    newHOC(Component){
+        return class extends React.Component {
+            render(){
+                return(
+                    <div>
+                        <Component />
+                    </div>
+                );
+            }
+        }
     }
     
     render(){

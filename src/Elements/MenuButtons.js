@@ -2,7 +2,7 @@ import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import { HomeRounded, ShoppingCartRounded, AccountCircleRounded, } from '@material-ui/icons';
 
-class Menu extends React.Component {
+class MenuButtons extends React.Component {
     render() {
         return (
             <div>
@@ -14,4 +14,4 @@ class Menu extends React.Component {
     }
 }
 
-export default Menu;
+export default MenuButtons;
