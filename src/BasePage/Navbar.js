@@ -1,11 +1,20 @@
 import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
-import { HomeRounded, ShoppingCartRounded, AccountCircleRounded, FavoriteRounded, MenuRounded } from '@material-ui/icons';
+import { FavoriteRounded, MenuRounded } from '@material-ui/icons';
+import Kimomi from './Kimomi';
+import Menu from '../Elements/Menu';
 
 class Navbar extends React.Component {
-    constructor() {
+
+    constructor(){
         super();
+        this.state = {
+            isMobile: new Kimomi().isMobile
+        }
+        
+        console.log(this.state.isMobile);
     }
+
     render() {
         return (
             <div className="navbar">
@@ -14,10 +23,9 @@ class Navbar extends React.Component {
                     <FavoriteRounded/>
                 </div>
                 <div>
-                    <IconButton ><MenuRounded /></IconButton>
-                    <IconButton ><HomeRounded /></IconButton>
-                    <IconButton ><ShoppingCartRounded /></IconButton>
-                    <IconButton ><AccountCircleRounded /></IconButton>
+                    {this.state.isMobile && <IconButton ><MenuRounded /></IconButton>}
+                    {!this.state.isMobile && <Menu />}
+                    
                 </div>
             </div>
         );
